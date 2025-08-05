@@ -12,7 +12,7 @@
     "multer": "^1.4.5-lts.1",
     "pdf-parse": "^1.1.1"
   }
-}
+},
 "scripts": {
   "postinstall": "cd ../frontend && npm install && npm run build"
 }
