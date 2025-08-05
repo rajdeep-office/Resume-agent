@@ -1,20 +1,24 @@
-const express = require('express');
-const multer = require('multer');
-const pdfParse = require('pdf-parse');
-const cors = require('cors');
-const fs = require('fs');
+import express from "express";
+import multer from "multer";
+import pdfParse from "pdf-parse";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
+const upload = multer({ dest: path.join(__dirname, "uploads/") });
 app.use(cors());
 
-const upload = multer({ dest: 'uploads/' });
+// Serve frontend build files in production
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 const KEYWORDS = [
   "JavaScript", "Python", "Node.js", "React", "API", "SQL", "AWS", "Git", "Agile", "Communication", "Teamwork"
 ];
 
 function simpleATSScore(text) {
-  // Count keywords
   let score = 0;
   let found = [];
   KEYWORDS.forEach(word => {
@@ -23,7 +27,6 @@ function simpleATSScore(text) {
       found.push(word);
     }
   });
-  // Cap at 100
   return {
     score: Math.min(score, 100),
     found
@@ -38,7 +41,7 @@ function suggestImprovements(foundKeywords) {
   return `Consider including these key terms/skills if relevant: ${missing.join(', ')}`;
 }
 
-app.post('/api/upload', upload.single('resume'), async (req, res) => {
+app.post("/api/upload", upload.single("resume"), async (req, res) => {
   try {
     const file = req.file;
     const dataBuffer = fs.readFileSync(file.path);
@@ -47,7 +50,6 @@ app.post('/api/upload', upload.single('resume'), async (req, res) => {
     const { score, found } = simpleATSScore(data.text);
     const suggestions = suggestImprovements(found);
 
-    // Clean up uploaded file
     fs.unlinkSync(file.path);
 
     res.json({
@@ -56,10 +58,16 @@ app.post('/api/upload', upload.single('resume'), async (req, res) => {
       suggestions
     });
   } catch (e) {
-    res.status(500).json({ error: 'Failed to parse resume. Please upload a valid PDF file.' });
+    res.status(500).json({ error: "Failed to parse resume. Please upload a valid PDF file." });
   }
 });
 
-app.listen(5000, () => {
-  console.log('Backend running on http://localhost:5000');
+// Serve React app for any other route
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Backend running on http://localhost:${PORT}`);
 });
