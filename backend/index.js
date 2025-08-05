@@ -11,7 +11,7 @@ const app = express();
 const upload = multer({ dest: path.join(__dirname, "uploads/") });
 app.use(cors());
 
-// Serve frontend build files in production
+// Serve frontend build files
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 const KEYWORDS = [
@@ -62,7 +62,7 @@ app.post("/api/upload", upload.single("resume"), async (req, res) => {
   }
 });
 
-// Serve React app for any other route
+// Fallback to frontend for any other route
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
 });
