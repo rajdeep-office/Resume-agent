@@ -33,7 +33,7 @@ const UploadResume = () => {
       <form onSubmit={handleUpload}>
         <input
           type="file"
-          accept=".pdf"
+          accept=".pdf,.docx,.txt"
           onChange={e => setFile(e.target.files[0])}
           required
         />
