@@ -37,14 +37,24 @@ const UploadResume = () => {
           onChange={e => setFile(e.target.files[0])}
           required
         />
-        <button type="submit" disabled={loading}>
+        <button type="submit" style="cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: #cfef00;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  font-size: 15px;" disabled={loading}>
           {loading ? "Analyzing..." : "Upload & Score"}
         </button>
+     
       </form>
       {result && (
         <div style={{ marginTop: 20 }}>
           {result.error ? (
-            <div style={{ color: "red" }}>{result.error}</div>
+            <div style={{ color: "white" }}>{result.error}</div>
           ) : (
             <>
               <h3>Overview</h3>
