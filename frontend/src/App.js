@@ -5,7 +5,7 @@ function App() {
   return (
     <div style={{ maxWidth: 600, margin: "40px auto", fontFamily: "sans-serif" }}>
       
-  <h1>Resume Scoring Agent</h1>
+  <img src = 'resume_scoring.jpeg'/>
       <UploadResume />
     </div>
   );
