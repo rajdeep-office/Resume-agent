@@ -1,6 +1,5 @@
 import React from "react";
 import UploadResume from "./components/UploadResume";
-import HoverButton from "./components/HoverButton"; // Assuming you save it as a separate component
 
 function App() {
   return (
@@ -25,7 +24,7 @@ function App() {
       </h1>
       <UploadResume />
       <div style={{ marginTop: "20px" }}>
-        <HoverButton>Submit Resume</HoverButton>
+        
       </div>
     </div>
   );
