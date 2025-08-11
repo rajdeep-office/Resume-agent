@@ -45,8 +45,10 @@ const UploadResume = () => {
   };
 
   return (
-    <div style={{ textAlign: "center", marginTop: "30px", fontSize:"10px", color:"white"}}>
-  <p> Upload your Resume </p>
+    <div style={{ textAlign: "center", marginTop: "30px", color:"white"}}>
+  <p style={{
+          fontSize: "20px",
+          }}> Upload your Resume </p>
       <form onSubmit={handleUpload}>
         <input
           type="file"
