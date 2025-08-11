@@ -20,8 +20,17 @@ function App() {
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
         }}
       >
-        Resume Scoring Agent
+        Resume Scoring Tool
       </h1>
+       <h2
+          style={{
+          fontSize: "2rem",
+          marginBottom: "10px",
+          textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+          }}
+      >
+      Get instant feedback on your Resume with AI-Powered analysis. 
+      Improve your formating, keywords, grammar, readability to land more interviews.</h2> 
       <UploadResume />
       <div style={{ marginTop: "20px" }}>
         
