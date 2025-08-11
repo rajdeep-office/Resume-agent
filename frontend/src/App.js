@@ -22,15 +22,15 @@ function App() {
       >
         Resume Scoring Tool
       </h1>
-       <h2
+       <p
           style={{
-          fontSize: "2rem",
+          fontSize: "20px",
           marginBottom: "10px",
-          textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+          textShadow: "2px 2px 4px rgba(0,0,0,0.7)",
           }}
       >
       Get instant feedback on your Resume with AI-Powered analysis. 
-      Improve your formating, keywords, grammar, readability to land more interviews.</h2> 
+      Improve your formating, keywords, grammar, readability to land more interviews.</p> 
       <UploadResume />
       <div style={{ marginTop: "20px" }}>
         
