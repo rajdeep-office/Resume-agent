@@ -36,7 +36,7 @@ const UploadResume = () => {
     border: "none",
     borderRadius: "8px",
     cursor: "pointer",
-    backgroundColor: isHovered ? "#F8FAFC" : "#ff6f61",
+    backgroundColor: isHovered ? "#3E5879" : "#D9EAFD",
     color: isHovered ? "#ffffff" : "#333333",
     boxShadow: isHovered
       ? "0 4px 12px rgba(0, 0, 0, 0.2)"
@@ -96,7 +96,7 @@ const UploadResume = () => {
             textAlign: "left",
             maxWidth: "600px",
             margin: "30px auto",
-            backgroundColor: "#1e1e1e",
+            backgroundColor: "#F8FAFC",
             padding: "20px",
             borderRadius: "10px",
             color: "#fff",
@@ -107,7 +107,7 @@ const UploadResume = () => {
             <div
               style={{
                 color: "#fff",
-                backgroundColor: "#ff4d4f",
+                backgroundColor: "#F8FAFC",
                 padding: "10px",
                 borderRadius: "6px",
               }}
@@ -120,7 +120,7 @@ const UploadResume = () => {
               <pre
                 style={{
                   whiteSpace: "pre-wrap",
-                  backgroundColor: "#5BBCFF",
+                  backgroundColor: "#F8FAFC",
                   padding: "10px",
                   borderRadius: "6px",
                   color: "#5BBCFF",
@@ -134,7 +134,7 @@ const UploadResume = () => {
               <h3 style={{ color: "#393E46" }}>Suggestions</h3>
               <div
                 style={{
-                  backgroundColor: "#5BBCFF",
+                  backgroundColor: "#F8FAFC",
                   padding: "10px",
                   borderRadius: "6px",
                   color: "#5BBCFF",
