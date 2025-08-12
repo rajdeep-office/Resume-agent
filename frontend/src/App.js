@@ -1,7 +1,6 @@
 import React from "react";
 import UploadResume from "./components/UploadResume";
-import Button from '@/components/button';
-import Card from '@/componentscard';
+import Card from './components/Card';
 
 function App() {
   return (
