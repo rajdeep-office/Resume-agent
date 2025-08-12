@@ -1,4 +1,5 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import UploadResume from "./components/UploadResume";
 import Card from "./components/Card";
 
