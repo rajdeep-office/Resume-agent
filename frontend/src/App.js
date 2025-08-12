@@ -5,11 +5,10 @@ function App() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right, #F0F8FF, #00FFFF)",
+        background: "linear-gradient(to right, #FBFBFB, #E8F9FF)",
         minHeight: "100vh",
         padding: "40px",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "#A52A2A",
         textAlign: "center",
       }}
     >
@@ -18,14 +17,34 @@ function App() {
           fontSize: "3rem",
           marginBottom: "30px",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+          color:"black",
         }}
       >
-        Resume Scoring Tool
+        Resume 
+          </h1>
+    <h1
+        style={{
+          fontSize: "3rem",
+          marginBottom: "30px",
+          textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+          color:"#3674B5",
+        }}
+      >
+Scoring </h1>
+  <h1
+        style={{
+          fontSize: "3rem",
+          marginBottom: "30px",
+          textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
+          color: "black",
+        }}
+      >Tool
       </h1>
        <p
           style={{
           fontSize: "20px",
           marginBottom: "10px",
+          color:#B3C8CF  
           }}
       >
       Get instant feedback on your Resume with AI-Powered analysis. <br/>
