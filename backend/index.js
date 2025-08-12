@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 const KEYWORDS = [
-  "JavaScript", "Python", "Node.js", "React", "API", "SQL", "AWS", "Git", "Agile", "Communication", "Teamwork"
+  "JavaScript", "Python", "Node.js", "React", "API", "SQL", "AWS", "Git", "Agile", "Communication", "Teamwork", "Salesforce", "Oracle Apex", "Oracle EBS", "HTML", "CSS", "Angular", "PL/SQL", "Leadership"
 ];
 
 function simpleATSScore(text) {
