@@ -14,9 +14,9 @@ function App() {
     >
       <h1
         style={{
-          fontSize: "5rem",
+          fontSize: "3rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-          color:"#57564F",
+          color:"#003161",
         }}
       >Resume Scoring Tool</h1>
        <p
