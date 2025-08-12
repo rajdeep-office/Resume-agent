@@ -36,7 +36,7 @@ const UploadResume = () => {
     border: "none",
     borderRadius: "8px",
     cursor: "pointer",
-    backgroundColor: isHovered ? "#ff6f61" : "#ffffff",
+    backgroundColor: isHovered ? "#ff6f61" : "#456882",
     color: isHovered ? "#ffffff" : "#333333",
     boxShadow: isHovered
       ? "0 4px 12px rgba(0, 0, 0, 0.2)"
@@ -68,12 +68,14 @@ const UploadResume = () => {
           required
           style={{
             padding: "12px",
-            borderRadius: "8px",
-            border: "2px solid #fff",
-            backgroundColor: "#f0f0f0",
+            borderRadius: "10px",
+            border: "2px solid #5BBCFF",
+            backgroundColor: "#5BBCFF",
             fontSize: "16px",
-            marginBottom: "20px",
-            width: "300px",
+            marginBottom: "30px",
+            width: "500px",
+            height:"500px",
+            color:"black",
           }}
         />
         <br />
@@ -115,28 +117,28 @@ const UploadResume = () => {
             </div>
           ) : (
             <>
-              <h3 style={{ color: "#ffd700" }}>Overview</h3>
+              <h3 style={{ color: "#393E46" }}>Overview</h3>
               <pre
                 style={{
                   whiteSpace: "pre-wrap",
-                  backgroundColor: "#2e2e2e",
+                  backgroundColor: "#5BBCFF",
                   padding: "10px",
                   borderRadius: "6px",
-                  color: "#fff",
+                  color: "#5BBCFF",
                 }}
               >
                 {result.overview}
               </pre>
-              <h3 style={{ color: "#00ffcc" }}>
+              <h3 style={{ color: "#393E46" }}>
                 ATS Score: {result.atsScore}/100
               </h3>
-              <h3 style={{ color: "#ffd700" }}>Suggestions</h3>
+              <h3 style={{ color: "#393E46" }}>Suggestions</h3>
               <div
                 style={{
-                  backgroundColor: "#333",
+                  backgroundColor: "#5BBCFF",
                   padding: "10px",
                   borderRadius: "6px",
-                  color: "#fff",
+                  color: "#5BBCFF",
                 }}
               >
                 {result.suggestions}
