@@ -57,7 +57,7 @@ const UploadResume = () => {
           whiteSpace: "pre-wrap",
         }}
       >
-        {animatedText} (Only PDF files are allowed)
+        (Only PDF files are allowed)
       </h2>
 (Only PDF files are allowed)
       <form onSubmit={handleUpload}>
