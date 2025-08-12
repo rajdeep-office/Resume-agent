@@ -19,7 +19,7 @@ function App() {
           color: "#003161",
         }}
       >
-        Resume Scoring Tool
+        Resume Scoring Agent
       </h1>
       <p
         style={{
