@@ -14,8 +14,7 @@ function App() {
     >
       <h1
         style={{
-          fontSize: "3rem",
-          marginBottom: "30px",
+          fontSize: "5rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
           color:"black",
         }}
@@ -24,8 +23,7 @@ function App() {
           </h1>
     <h1
         style={{
-          fontSize: "3rem",
-          marginBottom: "30px",
+          fontSize: "5rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
           color:"#3674B5",
         }}
@@ -34,8 +32,7 @@ Scoring
   </h1>
   <h1
         style={{
-          fontSize: "3rem",
-          marginBottom: "30px",
+          fontSize: "5rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
           color: "black",
         }}
@@ -46,7 +43,7 @@ Tool
           style={{
           fontSize: "20px",
           marginBottom: "10px",
-          color:"#B3C8CF",  
+          color:"#57564F",  
           }}
       >
       Get instant feedback on your Resume with AI-Powered analysis. <br/>
