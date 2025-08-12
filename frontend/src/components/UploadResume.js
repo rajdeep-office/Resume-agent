@@ -123,7 +123,7 @@ const UploadResume = () => {
                   backgroundColor: "#F8FAFC",
                   padding: "10px",
                   borderRadius: "6px",
-                  color: "#5BBCFF",
+                  color: "#393E46",
                 }}
               >
                 {result.overview}
@@ -137,7 +137,7 @@ const UploadResume = () => {
                   backgroundColor: "#F8FAFC",
                   padding: "10px",
                   borderRadius: "6px",
-                  color: "#5BBCFF",
+                  color: "#393E46",
                 }}
               >
                 {result.suggestions}
