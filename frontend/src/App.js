@@ -16,22 +16,9 @@ function App() {
         style={{
           fontSize: "5rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-          color:"black",
+          color:"#57564F",
         }}
-      >Resume</h1><h1
-        style={{
-          fontSize: "5rem",
-          textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-          color:"#3674B5",
-        }}
-      >Scoring 
-  </h1><h1
-        style={{
-          fontSize: "5rem",
-          textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
-          color: "black",
-        }}
-      >Tool</h1>
+      >Resume Scoring Tool</h1>
        <p
           style={{
           fontSize: "20px",
