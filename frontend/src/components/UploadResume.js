@@ -7,18 +7,6 @@ const UploadResume = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [animatedText, setAnimatedText] = useState("");
 
-  const fullText = "Upload your resume and get instant feedback!";
-  let index = 0;
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimatedText((prev) => prev + fullText[index]);
-      index++;
-      if (index >= fullText.length) clearInterval(interval);
-    }, 50);
-    return () => clearInterval(interval);
-  }, []);
-
   const handleUpload = async (e) => {
     e.preventDefault();
     if (!file) return;
@@ -75,7 +63,7 @@ const UploadResume = () => {
       <form onSubmit={handleUpload}>
         <input
           type="file"
-          accept=".pdf,.docx,.txt"
+          accept=".pdf"
           onChange={(e) => setFile(e.target.files[0])}
           required
           style={{
