@@ -30,7 +30,8 @@ function App() {
           color:"#3674B5",
         }}
       >
-Scoring </h1>
+Scoring 
+  </h1>
   <h1
         style={{
           fontSize: "3rem",
@@ -38,13 +39,14 @@ Scoring </h1>
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
           color: "black",
         }}
-      >Tool
+      >
+Tool
       </h1>
        <p
           style={{
           fontSize: "20px",
           marginBottom: "10px",
-          color:#B3C8CF  
+          color:"#B3C8CF",  
           }}
       >
       Get instant feedback on your Resume with AI-Powered analysis. <br/>
