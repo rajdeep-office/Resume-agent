@@ -36,7 +36,7 @@ const UploadResume = () => {
     border: "none",
     borderRadius: "8px",
     cursor: "pointer",
-    backgroundColor: isHovered ? "#456882" : "#ff6f61",
+    backgroundColor: isHovered ? "#F8FAFC" : "#ff6f61",
     color: isHovered ? "#ffffff" : "#333333",
     boxShadow: isHovered
       ? "0 4px 12px rgba(0, 0, 0, 0.2)"
@@ -73,7 +73,7 @@ const UploadResume = () => {
             backgroundColor: "none",
             fontSize: "16px",
             marginBottom: "30px",
-            width: "100px",
+            width: "300px",
             color:"black",
           }}
         />
