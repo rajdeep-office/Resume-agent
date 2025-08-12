@@ -5,11 +5,11 @@ function App() {
   return (
     <div
       style={{
-        background: "linear-gradient(to right, FCFFE9, FFF2CC)",
+        background: "linear-gradient(to right, #FCFFE9, #FFF2CC)",
         minHeight: "100vh",
         padding: "40px",
         fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-        color: "white",
+        color: "#1E90FF",
         textAlign: "center",
       }}
     >
