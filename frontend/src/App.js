@@ -1,5 +1,6 @@
 import React from "react";
 import UploadResume from "./components/UploadResume";
+import UploadResume from "./components/Card";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
     >
       <h1
         style={{
-          fontSize: "3rem",
+          fontSize: "4rem",
           textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
           color:"#003161",
         }}
@@ -28,6 +29,7 @@ function App() {
       >
       Get instant feedback on your Resume with AI-Powered analysis. <br/>
       Improve your formating, keywords, grammar, readability to land more interviews.</p> 
+        <Card />
              <UploadResume />
       <div style={{ marginTop: "20px" }}>
         
