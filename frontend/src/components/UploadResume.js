@@ -61,34 +61,50 @@ const UploadResume = () => {
       </h2>
 
       <form onSubmit={handleUpload}>
-        <input
-          type="file"
-          accept=".pdf"
-          onChange={(e) => setFile(e.target.files[0])}
-          required
-          style={{
-            padding: "12px",
-            borderRadius: "10px",
-            border: "0px",
-            backgroundColor: "none",
-            fontSize: "16px",
-            marginBottom: "30px",
-            width: "300px",
-            color:"black",
-          }}
-        />
-        <br />
-        <button
-          type="submit"
-          disabled={loading}
-          style={buttonStyle}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          {loading ? "Analyzing..." : "Upload & Score"}
-        </button>
-      </form>
+  <div style={{ marginBottom: "20px" }}>
+    <input
+      id="file-upload"
+      type="file"
+      accept=".pdf,.docx,.txt"
+      onChange={(e) => setFile(e.target.files[0])}
+      required
+      style={{ display: "none" }}
+    />
+    <label
+      htmlFor="file-upload"
+      style={{
+        padding: "12px 24px",
+        backgroundColor: "#003161",
+        color: "#fff",
+        borderRadius: "8px",
+        cursor: "pointer",
+        fontSize: "16px",
+        display: "inline-block",
+        marginRight: "10px",
+        transition: "background-color 0.3s ease",
+      }}
+      onMouseEnter={(e) => (e.target.style.backgroundColor = "#005fa3")}
+      onMouseLeave={(e) => (e.target.style.backgroundColor = "#003161")}
+    >
+      Browse
+    </label>
+    {file && (
+      <span style={{ fontSize: "16px", color: "#333" }}>
+        {file.name}
+      </span>
+    )}
+  </div>
 
+  <button
+    type="submit"
+    disabled={loading}
+    style={buttonStyle}
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+  >
+    {loading ? "Analyzing..." : "Upload & Score"}
+  </button>
+</form>
       {result && (
         <div
           style={{
